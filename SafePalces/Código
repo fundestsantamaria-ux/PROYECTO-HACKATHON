@@ -1,0 +1,191 @@
+import os
+os.environ["OMP_NUM_THREADS"] = "1"
+
+import pandas as pd
+from sklearn.cluster import KMeans
+import folium
+from folium.plugins import MarkerCluster
+import time
+from datetime import datetime
+import webbrowser
+from pathlib import Path
+
+# --------------------------------------
+# CONFIGURACIÓN
+# --------------------------------------
+RUTA_EXCEL = r"C:\Users\angel\Downloads\Base_de_datos.xlsx"
+RUTA_MAPA = "mapa_zonas_live.html"
+INTERVALO_REFRESH = 30  # segundos entre actualizaciones
+ABRIR_NAVEGADOR = True  # Abrir automáticamente en el navegador
+
+# --------------------------------------
+# FUNCIÓN PRINCIPAL
+# --------------------------------------
+def generar_mapa_actualizado():
+    try:
+        # 1. Cargar datos
+        df = pd.read_excel(RUTA_EXCEL)
+        
+        # 2. Renombrar columnas
+        df = df.rename(columns={
+            "Latitud": "latitud",
+            "Longitud": "longitud",
+            "Nivel de Iluminación\n\nEn una escala del 0 al 1\n1 = Excelente\n0 = Muy mala\n\nDescriba la cantidad de iluminación de la zona": "iluminacion",
+            "Cantidad de comercios cercanos": "comercios",
+            "Indique el número de reportes de incidentes en la zona": "reportes",
+            "Flujo de personas\n\nDel 1 al 5\n\n1 = Casi nadie\n5 = Muy concurrido\n\nEscriba según el flujo de personas que correspondan": "flujo",
+            "Distancia al punto de policía más cercano (en metros)": "distancia_policia"
+        })
+        
+        # 3. Preparar datos
+        features = ["iluminacion", "comercios", "reportes", "flujo", "distancia_policia"]
+        df[features] = df[features].apply(pd.to_numeric, errors="coerce")
+        df = df.dropna(subset=features + ["latitud", "longitud"])
+        
+        # 4. K-Means
+        kmeans = KMeans(n_clusters=3, random_state=0)
+        df["cluster"] = kmeans.fit_predict(df[features])
+        
+        # 5. Colores
+        colores = {0: "green", 1: "orange", 2: "red"}
+        df["color"] = df["cluster"].map(colores)
+        
+        # 6. Crear mapa con auto-refresh
+        centro = [df["latitud"].mean(), df["longitud"].mean()]
+        mapa = folium.Map(location=centro, zoom_start=14)
+        
+        # Agregar script de auto-refresh al mapa
+        auto_refresh = f"""
+        <script>
+            setTimeout(function(){{
+                location.reload();
+            }}, {INTERVALO_REFRESH * 1000});
+        </script>
+        """
+        mapa.get_root().html.add_child(folium.Element(auto_refresh))
+        
+        # Agregar indicador de última actualización
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        titulo_html = f'''
+        <div style="position: fixed; 
+                    top: 10px; 
+                    left: 50px; 
+                    width: 400px; 
+                    height: 90px; 
+                    background-color: white; 
+                    border: 2px solid grey; 
+                    z-index: 9999; 
+                    font-size: 14px;
+                    padding: 10px;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <h4 style="margin: 0 0 5px 0;">🗺️ Mapa de Seguridad en Tiempo Real</h4>
+            <p style="margin: 5px 0;"><strong>Última actualización:</strong> {timestamp}</p>
+            <p style="margin: 5px 0;"><strong>Próxima actualización:</strong> {INTERVALO_REFRESH}s</p>
+        </div>
+        '''
+        mapa.get_root().html.add_child(folium.Element(titulo_html))
+        
+        # Agregar leyenda
+        leyenda_html = '''
+        <div style="position: fixed; 
+                    bottom: 50px; 
+                    right: 50px; 
+                    width: 180px; 
+                    background-color: white; 
+                    border: 2px solid grey; 
+                    z-index: 9999; 
+                    padding: 10px;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <h4 style="margin: 0 0 10px 0;">Leyenda</h4>
+            <p style="margin: 5px 0;">
+                <span style="display: inline-block; width: 15px; height: 15px; 
+                      background-color: green; border-radius: 50%; margin-right: 5px;"></span>
+                Zona Segura
+            </p>
+            <p style="margin: 5px 0;">
+                <span style="display: inline-block; width: 15px; height: 15px; 
+                      background-color: orange; border-radius: 50%; margin-right: 5px;"></span>
+                Riesgo Moderado
+            </p>
+            <p style="margin: 5px 0;">
+                <span style="display: inline-block; width: 15px; height: 15px; 
+                      background-color: red; border-radius: 50%; margin-right: 5px;"></span>
+                Zona de Riesgo
+            </p>
+        </div>
+        '''
+        mapa.get_root().html.add_child(folium.Element(leyenda_html))
+        
+        # Agregar marcadores
+        marker_cluster = MarkerCluster().add_to(mapa)
+        
+        for _, row in df.iterrows():
+            popup_text = f"""
+            <b>Cluster:</b> {row['cluster']}<br>
+            <b>Iluminación:</b> {row['iluminacion']}<br>
+            <b>Comercios:</b> {row['comercios']}<br>
+            <b>Reportes:</b> {row['reportes']}<br>
+            <b>Flujo:</b> {row['flujo']}<br>
+            <b>Dist. Policía:</b> {row['distancia_policia']}m
+            """
+            folium.CircleMarker(
+                location=[row["latitud"], row["longitud"]],
+                radius=40,
+                color=row["color"],
+                fill=True,
+                fill_color=row["color"],
+                fill_opacity=0.6,
+                popup=popup_text
+            ).add_to(marker_cluster)
+        
+        # Guardar mapa
+        mapa.save(RUTA_MAPA)
+        print(f"[✓] Mapa actualizado: {timestamp}")
+        
+        return True
+        
+    except Exception as e:
+        print(f"[✗] Error: {e}")
+        return False
+
+# --------------------------------------
+# LOOP PRINCIPAL
+# --------------------------------------
+def main():
+    print("=" * 60)
+    print("🚀 SISTEMA DE MAPAS CON AUTO-REFRESH")
+    print("=" * 60)
+    print(f"📂 Archivo: {RUTA_EXCEL}")
+    print(f"⏱️  Intervalo: {INTERVALO_REFRESH} segundos")
+    print(f"💾 Mapa: {RUTA_MAPA}")
+    print("=" * 60)
+    print("\n[...] Iniciando sistema...\n")
+    
+    # Generar mapa inicial
+    if generar_mapa_actualizado():
+        # Abrir en navegador
+        if ABRIR_NAVEGADOR:
+            ruta_completa = Path(RUTA_MAPA).absolute()
+            webbrowser.open(f'file://{ruta_completa}')
+            print(f"[✓] Mapa abierto en navegador\n")
+    
+    print("💡 El mapa se actualizará automáticamente")
+    print("   Presiona Ctrl+C para detener\n")
+    
+    # Loop infinito
+    iteracion = 1
+    try:
+        while True:
+            time.sleep(INTERVALO_REFRESH)
+            print(f"\n--- Actualización #{iteracion} ---")
+            generar_mapa_actualizado()
+            iteracion += 1
+            
+    except KeyboardInterrupt:
+        print("\n\n[✓] Sistema detenido por el usuario")
+        print("=" * 60)
+
+if _name_ == '_main_':
+    main()
