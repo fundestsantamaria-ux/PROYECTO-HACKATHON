@@ -1,0 +1,80 @@
+# 🌱 AGROSENSE-AI VISION PRO
+> **Sistema Inteligente de Diagnóstico de Patologías Vegetales mediante Deep Learning**
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+![MobileNetV2](https://img.shields.io/badge/Architecture-MobileNetV2-green)
+![Status](https://img.shields.io/badge/Status-Hackathon_Ready-red)
+
+## 📖 Descripción
+**AGRO-AI VISION PRO** es una solución de visión por computadora diseñada para ayudar a agricultores a detectar enfermedades en sus cultivos en etapas tempranas. Utilizando una arquitectura de Red Neuronal Convolucional (CNN) basada en **MobileNetV2** y técnicas de **Transfer Learning**, el sistema ofrece diagnósticos rápidos y precisos optimizados para dispositivos móviles.
+
+Este proyecto fue desarrollado para el **[Nombre del Hackathon]**.
+
+## ✨ Características Principales
+
+* **🧠 Motor de IA Avanzado:** Utiliza MobileNetV2 pre-entrenado en ImageNet para una extracción de características robusta.
+* **🔄 Entrenamiento en Dos Fases:** Estrategia de "Warm-up" seguida de "Fine-tuning" para maximizar la precisión sin sobreajuste.
+* **🎨 Data Augmentation Dinámico:** Transformaciones en tiempo real (rotación, zoom, contraste) para mejorar la generalización.
+* **📊 Analítica Visual:** Generación automática de matrices de confusión y curvas de aprendizaje.
+* **🎯 Diagnóstico Probabilístico:** No solo dice la clase, sino el nivel de confianza y las alternativas (Top-K predictions).
+* **📱 Mobile-Ready:** Arquitectura ligera (~14MB) ideal para despliegue en Edge/Mobile.
+
+## 🛠️ Requisitos Técnicos
+
+El sistema está optimizado para ejecutarse en **Google Colab** (GPU T4 recomendada).
+
+* Python 3.x
+* TensorFlow 2.x
+* Cuenta de Kaggle (para descarga automática del dataset)
+
+## 🚀 Guía de Instalación y Uso
+
+### 1. Preparación de Credenciales
+Necesitarás un archivo `kaggle.json` para descargar el dataset **PlantVillage** automáticamente.
+1. Ve a tu cuenta de Kaggle -> Settings -> API -> Create New Token.
+2. Descarga el archivo `kaggle.json`.
+
+### 2. Ejecución en Google Colab
+1. Abre el notebook `Agro_AI_Vision_Pro.ipynb`.
+2. Ejecuta la celda de configuración.
+3. Cuando el sistema lo solicite, sube tu archivo `kaggle.json`.
+4. El sistema descargará el dataset, entrenará el modelo y generará los reportes automáticamente.
+
+## 🧠 Arquitectura del Modelo
+
+El sistema utiliza una arquitectura híbrida:
+
+1.  **Backbone (Congelado/Descongelado):** MobileNetV2 (Feature Extractor).
+2.  **Custom Head (Clasificador):**
+    * `GlobalAveragePooling2D`
+    * `Dense` (512 neuronas + ReLU + BatchNormalization + Dropout 0.3)
+    * `Dense` (256 neuronas + ReLU + Dropout 0.2)
+    * `Softmax` (Salida multicliese)
+
+## 📊 Resultados Esperados
+
+El sistema genera automáticamente los siguientes artefactos en la carpeta de trabajo:
+
+| Archivo | Descripción |
+|---------|-------------|
+| `agro_ai_vision_pro.keras` | Modelo final entrenado y serializado. |
+| `model_metadata.json` | Metadatos técnicos (versión, precisión, clases). |
+| `confusion_matrix.png` | Matriz de confusión de las Top-20 clases. |
+| `training_history.png` | Gráficos de Accuracy y Loss (Train vs Val). |
+| `demo_predictions.png` | Simulación visual de diagnósticos en tiempo real. |
+
+## 📂 Estructura del Dataset
+El modelo se entrena con el dataset **PlantVillage**, que incluye 38 clases de plantas y enfermedades, incluyendo:
+* 🍎 Manzana (Sarna, Podredumbre negra, Cedro)
+* 🍅 Tomate (Tizón temprano/tardío, Mosaico, Araña roja)
+* 🥔 Papa (Tizón temprano/tardío)
+* 🌽 Maíz, Uva, Pimiento, etc.
+
+## 👥 Equipo
+* **Desarrollador Principal:
+* **Investigación:
+* **Diseño:
+
+---
+*Desarrollado con ❤️ y ☕ para mejorar la agricultura global.*
