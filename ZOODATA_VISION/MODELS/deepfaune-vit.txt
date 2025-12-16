@@ -1,0 +1,3 @@
+#En el siguiente link se encuentra el modelo VIT que se usa para el pipeline completo
+#Pesa casi 1.2GB
+Link: https://drive.google.com/drive/folders/1XXMblGK1pULigwZkvrbf5-xzxAxhx926?usp=sharing

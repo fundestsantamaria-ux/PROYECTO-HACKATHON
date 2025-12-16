@@ -1,0 +1,11 @@
+opencv-python
+numpy
+matplotlib
+pandas
+megadetector
+scikit-learn
+scikit-image
+umap-learn
+timm
+hdbscan
+streamlit
