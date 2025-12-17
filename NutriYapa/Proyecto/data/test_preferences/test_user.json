@@ -1,0 +1,18 @@
+{
+  "interactions": [
+    {
+      "timestamp": "2025-12-16T09:55:34.854713",
+      "recipe_id": "test_recipe",
+      "interaction_type": "selected",
+      "rating": 5,
+      "features": {
+        "calories": 350,
+        "protein_per_serving": 25,
+        "score_tag": "lowcal_highprot"
+      }
+    }
+  ],
+  "preferences_learned": {},
+  "favorite_ingredients": [],
+  "disliked_ingredients": []
+}

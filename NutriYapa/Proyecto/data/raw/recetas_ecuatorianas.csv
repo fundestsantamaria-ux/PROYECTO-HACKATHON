@@ -1,0 +1,51 @@
+name,calories,protein,fat,carbs,fiber,sugar,sodium,ingredients,description,meal_type,region,precio_aprox,tiempo_prep
+Encebollado de pescado,320,28,8,35,4,3,650,"pescado fresco,yuca,tomate,cebolla colorada,cilantro,limón,ají,comino","Sopa tradicional de la costa ecuatoriana con pescado fresco, yuca y encebollado",lunch,costa
+Ceviche de camarón,280,25,10,22,3,4,780,"camarón,tomate,cebolla colorada,limón,naranja,cilantro,ketchup,mostaza","Ceviche fresco de camarón estilo ecuatoriano con jugo de limón y naranja",lunch,costa
+Corvina al vapor,245,32,8,12,2,2,320,"corvina,tomate,cebolla,pimiento,ajo,limón,aceite de oliva","Pescado corvina al vapor con vegetales y limón",lunch,costa
+Encocado de pescado,420,30,22,28,5,4,580,"pescado,leche de coco,plátano verde,yuca,cebolla,pimiento,ají,cilantro,comino","Pescado en salsa de coco típico de Esmeraldas",lunch,costa
+Viche de pescado,380,26,12,42,6,5,720,"pescado,maní,yuca,verde,choclo,zanahoria,cebolla,ají,comino,achiote","Sopa espesa de pescado con maní y vegetales",lunch,costa
+Bolón de verde,450,12,18,65,8,5,420,"plátano verde,queso,chicharrón,cebolla,aceite","Bola de plátano verde machacado con queso o chicharrón",breakfast,costa
+Tigrillo,520,18,24,58,7,4,480,"plátano verde maduro,huevo,queso,cebolla,manteca","Plátano verde maduro machacado con huevo y queso",breakfast,costa
+Guatita,340,22,15,28,4,3,650,"mondongo,maní,papa,cebolla,ajo,comino,achiote","Estofado de mondongo en salsa de maní",lunch,costa
+Arroz con menestra y carne,580,28,18,75,12,3,580,"arroz,lenteja,carne de res,plátano maduro,cebolla,pimiento,comino,ajo","Plato típico costeño con arroz, lentejas y carne",lunch,costa
+Seco de pollo,520,35,20,48,5,4,680,"pollo,cerveza,naranjilla,cebolla,tomate,pimiento,cilantro,comino,arroz","Pollo guisado en salsa de cerveza y naranjilla con arroz",lunch,costa
+Patacones con queso,380,12,16,52,6,3,480,"plátano verde,queso,aceite,sal","Plátano verde frito aplastado servido con queso",snack,costa
+Chifles,420,2,22,54,5,2,320,"plátano verde,aceite,sal","Plátano verde cortado en rodajas finas y frito",snack,costa
+Locro de papa,290,8,10,42,6,4,520,"papa,queso,aguacate,cebolla,ajo,achiote,leche","Sopa cremosa de papa con queso y aguacate",lunch,sierra
+Fanesca,480,20,18,58,10,6,720,"12 granos,bacalao,zambo,zapallo,col,arveja,lenteja,maíz,frejol,leche,queso,huevo","Sopa tradicional de Semana Santa con 12 granos y bacalao",lunch,sierra
+Fritada con mote,680,32,38,52,8,3,780,"carne de cerdo,mote,papa,lechuga,tomate,cebolla,ajo,comino,achiote","Carne de cerdo frita servida con mote y papas",lunch,sierra
+Hornado con llapingachos,720,35,42,58,9,4,820,"carne de cerdo al horno,papa,queso,cebolla,chorizo,lechuga,tomate","Cerdo horneado con tortillas de papa y queso",lunch,sierra
+Cuy asado,380,45,18,8,2,1,420,"cuy,ajo,comino,ají,papa,lechuga","Cuy asado entero servido con papas y ensalada",lunch,sierra
+Llapingachos,320,10,14,42,5,2,380,"papa,queso,cebolla,achiote,aceite","Tortillas de papa rellenas de queso",lunch,sierra
+Yahuarlocro,350,18,15,38,5,3,680,"borrego,sangre,papa,cebolla,ajo,leche,vísceras","Sopa de papa con sangre de borrego",lunch,sierra
+Mote pillo,420,16,18,48,8,3,420,"mote,huevo,cebolla,leche,mantequilla","Mote tierno salteado con huevo",breakfast,sierra
+Morocho de dulce,380,8,8,72,6,45,120,"morocho,leche,canela,panela,pasas,clavo de olor","Bebida dulce caliente de morocho molido",snack,sierra
+Colada morada,320,4,2,75,8,52,85,"harina de maíz morado,frutas,especias,panela,naranjilla,mora,piña","Bebida dulce espesa tradicional de Día de Difuntos",snack,sierra
+Quimbolitos,280,6,8,48,3,22,180,"harina,huevo,mantequilla,queso,pasas,polvo de hornear","Pastel dulce al vapor envuelto en hoja de achira",snack,sierra
+Humitas,240,8,10,32,4,6,280,"choclo tierno,queso,huevo,mantequilla","Masa dulce de choclo envuelta en hoja de maíz",snack,sierra
+Empanadas de viento,350,10,18,38,3,4,420,"harina,queso,cebolla,azúcar,aceite","Empanadas fritas rellenas de queso espolvoreadas con azúcar",snack,sierra
+Maito de pescado,310,28,18,12,3,2,380,"pescado,cebolla,tomate,pimiento,hoja de bijao","Pescado envuelto en hoja de bijao y asado",lunch,amazonia
+Ayampaco de pollo,360,32,20,15,4,3,450,"pollo,cebolla,tomate,pimiento,ajo,hoja de bijao","Pollo envuelto en hoja de bijao y cocinado al vapor",lunch,amazonia
+Chicha de yuca,280,2,1,68,4,55,45,"yuca,panela,agua","Bebida fermentada tradicional de yuca",snack,amazonia
+Caldo de gallina criolla,380,28,15,32,3,4,680,"gallina criolla,papa,yuca,verde,cilantro,cebolla","Sopa nutritiva de gallina criolla con vegetales",lunch,general
+Sancocho,420,22,12,55,7,5,720,"carne,yuca,verde,choclo,papa,zanahoria,cilantro","Sopa espesa con carne y varios tubérculos",lunch,general
+Seco de chivo,580,38,28,42,5,4,750,"chivo,cerveza,naranjilla,cebolla,tomate,pimiento,ajo,comino,arroz","Chivo guisado en salsa con arroz",lunch,general
+Tripas mishki,520,24,32,35,4,12,580,"tripas,cebolla,tomate,panela,comino,ajo","Tripas de res guisadas con panela",lunch,sierra
+Yaguarlocro,340,20,14,36,5,3,650,"papa,sangre de borrego,cebolla,ajo,leche","Sopa de papa con sangre",lunch,sierra
+Caldo de pata,450,25,18,48,4,3,820,"pata de res,mote,yuca,papa,maní,cebolla,ajo","Sopa de pata de res con mote y maní",lunch,sierra
+Tortillas de maíz,220,6,8,32,4,3,280,"maíz,queso,huevo,mantequilla","Tortillas de maíz tierno con queso",breakfast,sierra
+Tostado con chicharrón,480,18,28,42,6,2,620,"maíz tostado,chicharrón,cebolla,tomate","Maíz tostado servido con chicharrón",snack,sierra
+Cevichocho,240,12,8,32,10,4,480,"chocho,tomate,cebolla,cilantro,limón,tostado,chifles","Chocho en escabeche con tostado y chifles",snack,sierra
+Morocho con empanadas,520,10,22,68,5,18,420,"morocho,empanadas,panela,canela","Bebida de morocho con empanadas de queso",breakfast,sierra
+Pincho de carne,420,32,22,28,3,8,580,"carne de res,papa,cebolla,pimiento,salsa","Brocheta de carne con papas y vegetales",lunch,general
+Salchipapa,580,18,32,55,5,6,980,"papas fritas,salchicha,salsas,mayonesa,ketchup","Papas fritas con salchicha y salsas",snack,general
+Encebollado de atún,340,26,10,38,5,4,720,"atún,yuca,tomate,cebolla,limón,cilantro","Variante de encebollado con atún",lunch,costa
+Bandera,650,28,25,75,10,8,680,"arroz,menestra,carne,huevo frito,patacón,aguacate","Plato completo con arroz, menestra, carne, huevo y patacón",lunch,general
+Sopa de quinua,280,12,6,48,8,3,420,"quinua,papa,zanahoria,arveja,cebolla,cilantro","Sopa nutritiva de quinua con vegetales",lunch,sierra
+Colada de machica,250,8,4,48,6,18,120,"machica,panela,canela,leche","Bebida caliente de harina de cebada tostada",breakfast,sierra
+Empanadas de morocho,320,8,14,42,5,8,380,"harina de morocho,queso,manteca","Empanadas de harina de morocho con queso",snack,sierra
+Bollo de pescado,380,22,15,42,4,3,580,"pescado,verde,maní,cebolla,especias,hoja de plátano","Masa de verde con pescado envuelta en hoja",lunch,costa
+Corviche,420,18,20,45,6,4,520,"verde,pescado,maní,cebolla,especias","Bola de verde cocido con pescado y maní",snack,costa
+Pan de yuca,280,8,12,38,2,4,380,"almidón de yuca,queso,huevo,mantequilla","Pan de almidón de yuca con queso",breakfast,general
+Ceviche de concha,260,20,8,28,3,5,850,"conchas negras,tomate,cebolla,limón,naranja,cilantro","Ceviche fresco de conchas negras",lunch,costa
+Arroz con mariscos,520,28,18,65,4,5,780,"arroz,mariscos mixtos,camarón,calamar,concha,cebolla,tomate,pimiento","Arroz marinero con mariscos frescos",lunch,costa

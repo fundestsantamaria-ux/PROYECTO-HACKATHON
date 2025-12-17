@@ -1,0 +1,56 @@
+name,calories,protein,fat,carbs,fiber,sugar,sodium,ingredients,description,category,origin
+Plátano verde (100g),122,1.3,0.4,31.9,2.3,15.0,4,"plátano verde","Plátano verde ecuatoriano rico en almidón",frutas,ecuador
+Plátano maduro (100g),89,1.1,0.3,22.8,2.6,12.2,1,"plátano maduro","Plátano maduro dulce ecuatoriano",frutas,ecuador
+Yuca (100g),160,1.4,0.3,38.1,1.8,1.7,14,"yuca","Raíz de yuca o mandioca ecuatoriana",tuberculos,ecuador
+Papa chola (100g),77,2.0,0.1,17.5,2.1,0.8,6,"papa chola","Papa amarilla típica de la sierra",tuberculos,ecuador
+Papa blanca (100g),69,1.5,0.1,15.9,2.4,0.6,5,"papa blanca","Papa blanca ecuatoriana",tuberculos,ecuador
+Mote (100g),105,3.5,1.2,20.8,4.5,0.5,8,"maíz pelado","Maíz pelado y cocido típico de la sierra",granos,ecuador
+Choclo tierno (100g),86,3.3,1.4,18.7,2.0,6.3,15,"choclo tierno","Maíz tierno ecuatoriano",granos,ecuador
+Tostado (100g),387,10.2,4.9,73.4,7.3,1.8,12,"maíz tostado","Maíz tostado crocante",granos,ecuador
+Morocho (100g),365,9.4,3.9,75.5,6.8,2.1,10,"morocho","Maíz morocho para coladas",granos,ecuador
+Quinua (100g),368,14.1,6.1,64.2,7.0,2.0,5,"quinua","Quinua andina ecuatoriana",granos,ecuador
+Chocho (100g),371,36.2,9.3,40.4,19.0,2.9,15,"chocho desamargado","Chocho o lupino desamargado",legumbres,ecuador
+Lenteja (100g),116,9.0,0.4,20.1,7.9,1.8,2,"lenteja","Lenteja para menestra",legumbres,ecuador
+Frejol (100g),127,8.7,0.5,22.8,6.4,0.3,1,"frejol","Frejol rojo ecuatoriano",legumbres,ecuador
+Arveja seca (100g),341,24.6,1.2,60.2,25.5,8.2,35,"arveja seca","Arveja seca para sopas",legumbres,ecuador
+Maní (100g),567,25.8,49.2,16.1,8.5,4.7,18,"maní","Maní ecuatoriano para salsas",frutos_secos,ecuador
+Panela (100g),380,0.3,0.1,98.0,0,95.0,8,"caña de azúcar","Azúcar integral de caña",endulzantes,ecuador
+Queso fresco (100g),264,17.5,21.0,3.1,0,0.5,380,"leche,sal,cuajo","Queso fresco blanco ecuatoriano",lacteos,ecuador
+Queso de hoja (100g),312,22.0,25.0,2.5,0,0.3,420,"leche,sal","Queso semi-maduro envuelto en hoja",lacteos,ecuador
+Quesillo (100g),195,14.5,14.8,4.2,0,2.0,280,"leche,cuajo","Quesillo fresco tipo requesón",lacteos,ecuador
+Leche entera (100ml),61,3.2,3.3,4.8,0,5.0,44,"leche","Leche fresca entera",lacteos,ecuador
+Naranjilla (100g),25,0.6,0.1,5.9,0.4,3.7,4,"naranjilla","Fruta ácida típica ecuatoriana",frutas,ecuador
+Mora andina (100g),43,1.0,0.5,9.8,5.3,4.9,1,"mora","Mora de castilla ecuatoriana",frutas,ecuador
+Taxo (100g),25,0.5,0.1,6.3,0.6,5.5,2,"taxo","Fruta de la pasión andina",frutas,ecuador
+Tomate de árbol (100g),31,1.5,0.1,7.0,2.4,3.5,3,"tomate de árbol","Tomate de árbol para jugos",frutas,ecuador
+Maracuyá (100g),97,2.2,0.7,23.4,10.4,11.2,28,"maracuyá","Fruta de la pasión ecuatoriana",frutas,ecuador
+Guanábana (100g),66,1.0,0.3,16.8,3.3,13.5,14,"guanábana","Guanábana fresca ecuatoriana",frutas,ecuador
+Aguacate (100g),160,2.0,14.7,8.5,6.7,0.7,7,"aguacate","Aguacate ecuatoriano cremoso",frutas,ecuador
+Chirimoya (100g),75,1.6,0.7,17.7,3.0,12.9,7,"chirimoya","Chirimoya dulce andina",frutas,ecuador
+Achiote (100g),20,0.8,0.5,4.2,1.0,0.2,5,"achiote","Semilla de achiote para color",especias,ecuador
+Cilantro fresco (100g),23,2.1,0.5,3.7,2.8,0.9,46,"cilantro","Cilantro fresco ecuatoriano",hierbas,ecuador
+Ají criollo (100g),40,2.0,0.4,8.8,1.5,5.3,9,"ají","Ají picante ecuatoriano",vegetales,ecuador
+Cebolla colorada (100g),40,1.1,0.1,9.3,1.7,4.2,4,"cebolla colorada","Cebolla paiteña morada",vegetales,ecuador
+Chochos preparados (100g),120,12.0,3.2,16.5,8.0,1.5,680,"chocho,vinagre,cebolla,tomate","Chochos en escabeche",legumbres,ecuador
+Melloco (100g),37,2.1,0.2,7.2,2.5,2.0,18,"melloco","Tubérculo andino nutritivo",tuberculos,ecuador
+Oca (100g),61,1.4,0.6,13.3,2.8,4.2,3,"oca","Tubérculo dulce andino",tuberculos,ecuador
+Mashua (100g),52,1.7,0.3,11.5,2.2,3.8,5,"mashua","Tubérculo medicinal andino",tuberculos,ecuador
+Zambo (100g),26,1.0,0.1,6.3,0.5,2.5,2,"zambo","Zapallo dulce para fanesca",vegetales,ecuador
+Zapallo (100g),26,1.0,0.1,6.5,0.5,1.4,1,"zapallo","Calabaza ecuatoriana",vegetales,ecuador
+Sambo (100g),22,0.8,0.1,5.4,0.8,2.8,1,"sambo","Zapallo tierno para sopas",vegetales,ecuador
+Verde frito (100g),285,1.5,14.0,38.5,3.2,18.0,8,"plátano verde,aceite,sal","Plátano verde frito en tajadas",snacks,ecuador
+Patacones (100g),220,1.3,8.5,35.0,2.8,16.0,320,"plátano verde,aceite,sal","Plátano verde frito aplastado",snacks,ecuador
+Chifles (100g),520,2.5,34.0,52.0,5.5,2.0,480,"plátano verde,aceite,sal","Chips de plátano verde",snacks,ecuador
+Canguil (100g),387,12.9,4.5,73.6,14.5,0.6,8,"maíz,sal","Canguil o maíz canchita",snacks,ecuador
+Tortillas de maíz (100g),165,4.5,6.0,24.0,2.5,2.0,280,"choclo,queso,huevo","Tortillas de choclo tierno",panaderia,ecuador
+Pan de yuca (100g),280,8.0,12.0,38.0,2.0,4.0,380,"almidón de yuca,queso,huevo","Pan de yuca con queso",panaderia,ecuador
+Empanadas de viento (100g),330,9.5,17.0,36.0,2.8,3.5,400,"harina,queso,azúcar","Empanadas fritas con queso",panaderia,ecuador
+Humitas (100g),180,6.0,7.5,24.0,3.0,4.5,210,"choclo,queso,mantequilla","Humitas dulces de choclo",panaderia,ecuador
+Quimbolitos (100g),250,5.5,7.0,43.0,2.5,20.0,160,"harina,queso,pasas","Quimbolitos al vapor",panaderia,ecuador
+Corvina fresca (100g),82,18.4,0.6,0,0,0,54,"corvina","Corvina fresca ecuatoriana",pescados,ecuador
+Dorado (100g),89,19.0,1.2,0,0,0,62,"dorado","Dorado fresco del Pacífico",pescados,ecuador
+Picudo (100g),85,18.8,0.8,0,0,0,58,"picudo","Picudo fresco ecuatoriano",pescados,ecuador
+Camarón (100g),99,20.9,1.7,0.9,0,0,566,"camarón","Camarón fresco ecuatoriano",mariscos,ecuador
+Concha negra (100g),74,13.2,2.0,4.2,0,0,629,"concha negra","Concha negra de Esmeraldas",mariscos,ecuador
+Calamar (100g),92,15.6,1.4,3.1,0,0,44,"calamar","Calamar fresco ecuatoriano",mariscos,ecuador
+Atún fresco (100g),144,23.3,4.9,0,0,0,39,"atún","Atún fresco ecuatoriano",pescados,ecuador

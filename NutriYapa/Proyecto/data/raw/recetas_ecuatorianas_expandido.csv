@@ -1,0 +1,163 @@
+name,calories,protein,fat,carbs,fiber,sugar,sodium,ingredients,description,meal_type,region,precio_aprox,tiempo_prep
+Arroz blanco cocido,130,2.7,0.3,28.2,0.4,0.1,1,"arroz,agua,sal","Arroz blanco básico ecuatoriano",lunch,general,bajo,20
+Arroz con huevo frito,280,10,8,42,1,0.5,180,"arroz,huevo,aceite,sal","Arroz con huevo frito encima",breakfast,general,bajo,15
+Arroz con atún,320,18,6,48,2,1,420,"arroz,atún enlatado,cebolla,tomate,sal","Arroz mezclado con atún",lunch,general,bajo,20
+Arroz con pollo simple,420,28,10,58,2,2,480,"arroz,pollo,cebolla,ajo,sal,comino","Arroz con pollo desmenuzado",lunch,general,medio,35
+Arroz con salchicha,380,12,14,52,2,3,680,"arroz,salchicha,cebolla,tomate","Arroz con salchicha picada",lunch,general,bajo,20
+Menestra de lenteja,180,12,2,32,10,2,280,"lenteja,cebolla,tomate,ajo,comino,sal","Menestra básica de lentejas",lunch,general,bajo,30
+Menestra de frejol,190,13,1,34,12,1,260,"frejol,cebolla,tomate,ajo,comino","Menestra de frejol rojo",lunch,general,bajo,35
+Sopa de fideo,140,5,2,26,2,1,420,"fideo,zanahoria,cebolla,sal","Sopa simple de fideos",lunch,general,bajo,15
+Sopa de arroz de cebada,120,4,1,24,3,2,380,"cebada,zanahoria,papa,cebolla","Sopa nutritiva de cebada",lunch,sierra,bajo,25
+Caldo de pata económico,280,18,8,32,3,2,580,"pata,mote,papa,cebolla,sal","Caldo de pata versión económica",lunch,sierra,medio,60
+Colada de avena,180,6,3,34,4,8,80,"avena,leche,canela,panela","Colada caliente de avena",breakfast,general,bajo,10
+Colada de maicena,160,3,2,32,0.5,12,60,"maicena,leche,azúcar,canela","Colada dulce de maicena",breakfast,general,bajo,10
+Café con pan,220,6,4,42,2,8,280,"café,pan,azúcar,leche","Café con leche y pan",breakfast,general,bajo,5
+Huevos revueltos,180,12,14,2,0,1,140,"huevo,aceite,sal","Huevos revueltos simples",breakfast,general,bajo,5
+Huevos fritos con arroz,320,14,12,38,1,0.5,160,"huevo,arroz,aceite,sal","Huevos fritos con arroz blanco",breakfast,general,bajo,15
+Tortilla de huevo,140,10,10,2,0,1,180,"huevo,cebolla,tomate,sal","Tortilla de huevo con vegetales",breakfast,general,bajo,10
+Pan con queso,280,12,10,38,2,4,420,"pan,queso fresco","Pan con tajadas de queso",breakfast,general,bajo,5
+Pan con mantequilla,260,5,8,42,2,6,320,"pan,mantequilla","Pan tostado con mantequilla",breakfast,general,bajo,5
+Tostadas con mermelada,240,4,2,52,2,18,220,"pan tostado,mermelada","Tostadas con mermelada",breakfast,general,bajo,5
+Verde asado con queso,320,10,8,56,6,8,280,"plátano verde,queso,sal","Verde asado con queso encima",snack,costa,bajo,20
+Verde cocido con sal,185,1.8,0.5,48,4,12,240,"plátano verde,sal,agua","Plátano verde cocido simple",snack,costa,bajo,15
+Patacones simples,240,1.5,10,38,3,8,280,"plátano verde,aceite,sal","Patacones fritos básicos",snack,costa,bajo,15
+Maduro frito,180,1.2,6,32,3,16,2,"plátano maduro,aceite","Plátano maduro frito",snack,costa,bajo,10
+Maduro asado,120,1.0,0.3,30,2.8,15,1,"plátano maduro","Plátano maduro asado",snack,costa,bajo,15
+Chifles caseros,380,2,18,52,5,2,320,"plátano verde,aceite,sal","Chifles hechos en casa",snack,costa,bajo,20
+Canguil con sal,387,13,4.5,74,15,1,480,"maíz,aceite,sal","Canguil o pop corn salado",snack,general,bajo,10
+Tostado simple,360,10,3,72,7,2,8,"maíz,sal","Maíz tostado básico",snack,sierra,bajo,15
+Papa cocida con sal,110,2.5,0.2,25,2.5,1.2,240,"papa,sal,agua","Papas cocidas simples",lunch,sierra,bajo,20
+Papa frita,312,3.5,15,40,3.5,0.8,180,"papa,aceite,sal","Papas fritas caseras",snack,general,medio,20
+Puré de papa,180,4,6,28,2.5,2,320,"papa,leche,mantequilla,sal","Puré de papa cremoso",lunch,sierra,bajo,20
+Yuca cocida,160,1.4,0.3,38,1.8,1.7,14,"yuca,sal,agua","Yuca cocida simple",lunch,costa,bajo,25
+Yuca frita,280,1.6,12,42,2,2,240,"yuca,aceite,sal","Yuca frita crocante",snack,costa,bajo,20
+Mote cocido,105,3.5,1.2,21,4.5,0.5,8,"mote,sal,agua","Mote pelado cocido",lunch,sierra,bajo,30
+Mote con chicharrón,420,18,26,32,5,1,520,"mote,chicharrón,sal","Mote con chicharrón frito",lunch,sierra,medio,40
+Choclo cocido,86,3.3,1.4,19,2,6,15,"choclo tierno,sal","Choclo tierno cocido",snack,sierra,bajo,15
+Choclo con queso,180,8,6,24,2.5,7,280,"choclo,queso fresco","Choclo con queso fresco",snack,sierra,bajo,15
+Ensalada verde simple,45,2,0.5,8,3,3,120,"lechuga,tomate,cebolla,limón,sal","Ensalada de lechuga y tomate",lunch,general,bajo,10
+Ensalada de col,60,2.5,0.8,12,4,5,140,"col,zanahoria,limón,sal","Ensalada de repollo rallado",lunch,general,bajo,10
+Ensalada rusa,220,5,12,24,4,6,380,"papa,zanahoria,arveja,mayonesa","Ensalada rusa con mayonesa",lunch,general,medio,30
+Tallarín con salsa de tomate,280,9,4,52,4,6,420,"tallarín,tomate,cebolla,ajo","Tallarín con salsa básica",lunch,general,bajo,20
+Tallarín con atún,340,16,6,56,4,6,520,"tallarín,atún,tomate,cebolla","Tallarín con atún enlatado",lunch,general,bajo,20
+Sopa de pollo simple,180,15,6,18,2,2,480,"pollo,papa,zanahoria,cebolla","Sopa de pollo básica",lunch,general,medio,30
+Caldo de res básico,220,18,8,20,2,2,520,"carne,papa,yuca,sal","Caldo de res simple",lunch,general,medio,40
+Sopa de queso,240,12,14,20,2,3,580,"papa,queso,leche,cebolla","Sopa cremosa de papa con queso",lunch,sierra,bajo,25
+Sopa de quinua,180,8,3,32,5,2,320,"quinua,papa,zanahoria,cebolla","Sopa nutritiva de quinua",lunch,sierra,medio,25
+Colada de plátano,220,2,1,52,4,28,40,"plátano maduro,leche,canela,azúcar","Colada dulce de plátano",breakfast,costa,bajo,10
+Batido de mora,180,4,2,38,5,28,45,"mora,leche,azúcar","Batido de mora con leche",snack,general,bajo,10
+Batido de naranjilla,160,3,1,36,2,30,40,"naranjilla,leche,azúcar","Batido de naranjilla",snack,general,bajo,10
+Batido de taxo,150,3,1,34,1,28,35,"taxo,leche,azúcar","Batido de taxo",snack,sierra,bajo,10
+Jugo de naranja,112,1.7,0.5,26,0.5,21,2,"naranja,azúcar,agua","Jugo natural de naranja",snack,general,bajo,5
+Jugo de piña,132,0.8,0.3,34,1.4,25,2,"piña,azúcar,agua","Jugo de piña fresco",snack,general,bajo,5
+Jugo de maracuyá,140,1.5,0.4,35,3,28,5,"maracuyá,azúcar,agua","Jugo de maracuyá",snack,costa,bajo,5
+Limonada,110,0.3,0.1,29,0.2,25,2,"limón,azúcar,agua","Limonada refrescante",snack,general,bajo,5
+Morocho de dulce,380,8,8,72,6,45,120,"morocho,leche,canela,panela,pasas","Bebida dulce de morocho",snack,sierra,bajo,20
+Colada morada,320,4,2,75,8,52,85,"maíz morado,frutas,panela,especias","Colada de Día de Difuntos",snack,sierra,medio,40
+Arroz con leche,280,6,8,48,1,32,120,"arroz,leche,canela,pasas,azúcar","Postre de arroz con leche",snack,general,bajo,25
+Flan casero,220,7,8,32,0,28,140,"leche,huevo,azúcar,vainilla","Flan de leche casero",snack,general,medio,45
+Gelatina,80,2,0,18,0,18,80,"gelatina,agua,azúcar","Gelatina de colores",snack,general,bajo,10
+Empanadas de queso,320,9,16,36,2.5,3,400,"harina,queso,aceite,sal","Empanadas fritas de queso",snack,sierra,bajo,20
+Empanadas de carne,350,12,18,38,2.5,2,450,"harina,carne molida,cebolla,aceite","Empanadas fritas de carne",snack,general,medio,30
+Pan de yuca,280,8,12,38,2,4,380,"almidón de yuca,queso,huevo","Pan de yuca con queso",breakfast,general,bajo,15
+Bolón de verde con queso,450,12,18,65,8,5,420,"plátano verde,queso,aceite","Bolón de verde con queso",breakfast,costa,bajo,20
+Bolón de verde con chicharrón,520,14,24,66,8,5,480,"plátano verde,chicharrón","Bolón con chicharrón",breakfast,costa,medio,25
+Tigrillo,520,18,24,58,7,4,480,"verde maduro,huevo,queso,cebolla","Verde machacado con huevo",breakfast,costa,bajo,20
+Encebollado de atún,340,26,10,38,5,4,720,"atún,yuca,tomate,cebolla,limón","Sopa de atún con yuca",lunch,costa,medio,35
+Encebollado de pescado,320,28,8,35,4,3,650,"pescado,yuca,tomate,cebolla,limón","Sopa tradicional de pescado",lunch,costa,medio,40
+Ceviche de camarón,280,25,10,22,3,4,780,"camarón,tomate,cebolla,limón","Ceviche de camarón fresco",lunch,costa,alto,30
+Ceviche de concha,260,20,8,28,3,5,850,"concha,tomate,cebolla,limón","Ceviche de concha negra",lunch,costa,alto,25
+Ceviche de pescado,240,22,8,20,2,4,680,"pescado,tomate,cebolla,limón","Ceviche de pescado blanco",lunch,costa,medio,25
+Corviche de pescado,420,18,20,45,6,4,520,"verde,pescado,maní,cebolla","Bola de verde con pescado",snack,costa,medio,30
+Bollo de pescado,380,22,15,42,4,3,580,"pescado,verde,maní,especias","Verde con pescado envuelto",lunch,costa,medio,35
+Guatita criolla,340,22,15,28,4,3,650,"mondongo,maní,papa,cebolla","Estofado de mondongo",lunch,costa,medio,40
+Sancocho de carne,420,22,12,55,7,5,720,"carne,yuca,verde,papa,choclo","Sopa espesa con carne",lunch,general,medio,45
+Caldo de gallina criolla,380,28,15,32,3,4,680,"gallina,papa,yuca,cilantro","Sopa de gallina criolla",lunch,general,medio,50
+Seco de pollo,520,35,20,48,5,4,680,"pollo,cerveza,arroz,cebolla","Pollo en salsa con arroz",lunch,costa,medio,40
+Seco de chivo,580,38,28,42,5,4,750,"chivo,cerveza,arroz,cebolla","Chivo guisado con arroz",lunch,general,alto,50
+Arroz con menestra y carne,580,28,18,75,12,3,580,"arroz,lenteja,carne,plátano maduro","Plato completo costeño",lunch,costa,medio,35
+Bandera completa,650,28,25,75,10,8,680,"arroz,menestra,carne,huevo,maduro","Bandera ecuatoriana completa",lunch,general,medio,40
+Locro de papa,290,8,10,42,6,4,520,"papa,queso,aguacate,cebolla","Sopa cremosa de papa",lunch,sierra,bajo,25
+Locro de zambo,260,7,8,38,5,6,480,"zambo,papa,queso,leche","Locro de zapallo dulce",lunch,sierra,bajo,25
+Fanesca,480,20,18,58,10,6,720,"12 granos,bacalao,zambo,leche","Sopa de Semana Santa",lunch,sierra,alto,90
+Fritada con mote,680,32,38,52,8,3,780,"cerdo,mote,papa,lechuga","Cerdo frito con mote",lunch,sierra,medio,40
+Hornado con llapingachos,720,35,42,58,9,4,820,"cerdo,papa,queso,chorizo","Cerdo horneado con tortillas",lunch,sierra,medio,50
+Llapingachos con huevo,380,12,16,48,6,2,420,"papa,queso,huevo,cebolla","Tortillas de papa con huevo",lunch,sierra,bajo,20
+Llapingachos con chorizo,450,16,24,48,6,2,580,"papa,queso,chorizo,cebolla","Tortillas con chorizo",lunch,sierra,medio,25
+Mote pillo,420,16,18,48,8,3,420,"mote,huevo,cebolla,leche","Mote salteado con huevo",breakfast,sierra,bajo,20
+Mote pata,520,24,22,55,9,2,680,"mote,pata,cebolla,ajo","Mote con pata de res",lunch,sierra,medio,45
+Tortillas de maíz con queso,220,8,8,28,3,2,280,"choclo,queso,huevo","Tortillas de choclo tierno",breakfast,sierra,bajo,15
+Humitas dulces,240,8,10,32,4,6,280,"choclo,queso,mantequilla","Humitas al vapor",snack,sierra,bajo,25
+Humitas saladas,220,9,9,28,4,3,320,"choclo,queso,mantequilla,sal","Humitas saladas",snack,sierra,bajo,25
+Quimbolitos,280,6,8,48,3,22,180,"harina,queso,pasas,mantequilla","Pastel dulce al vapor",snack,sierra,bajo,20
+Empanadas de viento,350,10,18,38,3,4,420,"harina,queso,azúcar,aceite","Empanadas con azúcar",snack,sierra,bajo,20
+Empanadas de morocho,320,8,14,42,5,8,380,"morocho,queso,manteca","Empanadas de harina de morocho",snack,sierra,bajo,20
+Caldo de pata con mote,450,25,18,48,4,3,820,"pata,mote,yuca,maní","Sopa de pata nutritiva",lunch,sierra,medio,60
+Yahuarlocro,350,18,15,38,5,3,680,"papa,sangre,cebolla,leche","Sopa con sangre de borrego",lunch,sierra,medio,35
+Cuy asado,380,45,18,8,2,1,420,"cuy,papa,lechuga,ají","Cuy asado tradicional",lunch,sierra,alto,60
+Tripas mishki,520,24,32,35,4,12,580,"tripas,panela,cebolla,tomate","Tripas con panela",lunch,sierra,medio,35
+Yaguarlocro,340,20,14,36,5,3,650,"papa,sangre,cebolla,ajo","Sopa de papa con sangre",lunch,sierra,medio,35
+Colada de machica,250,8,4,48,6,18,120,"machica,panela,canela,leche","Bebida de cebada tostada",breakfast,sierra,bajo,10
+Morocho con empanadas,520,10,22,68,5,18,420,"morocho,empanadas,panela","Desayuno tradicional",breakfast,sierra,bajo,15
+Cevichocho,240,12,8,32,10,4,480,"chocho,tomate,cebolla,limón","Chocho en escabeche",snack,sierra,bajo,15
+Chochos preparados,180,14,4,28,10,3,620,"chocho,cebolla,tomate,limón","Chochos listos para comer",snack,sierra,bajo,10
+Sopa de quinua con pollo,280,18,8,35,6,2,420,"quinua,pollo,papa,zanahoria","Sopa nutritiva con pollo",lunch,sierra,medio,30
+Quinua con vegetales,220,10,6,36,6,3,280,"quinua,zanahoria,arveja,cebolla","Quinua salteada con vegetales",lunch,sierra,bajo,25
+Maito de pescado,310,28,18,12,3,2,380,"pescado,tomate,cebolla,hoja","Pescado envuelto en hoja",lunch,amazonia,medio,40
+Ayampaco de pollo,360,32,20,15,4,3,450,"pollo,tomate,cebolla,hoja","Pollo en hoja de bijao",lunch,amazonia,medio,35
+Chicha de yuca,280,2,1,68,4,55,45,"yuca,panela,agua","Bebida fermentada de yuca",snack,amazonia,bajo,20
+Patacones con queso,380,12,16,52,6,3,480,"plátano verde,queso","Patacones con queso",snack,costa,bajo,15
+Salchipapa,580,18,32,55,5,6,980,"papa,salchicha,salsas","Papas con salchicha",snack,general,bajo,15
+Pincho de carne,420,32,22,28,3,8,580,"carne,papa,cebolla,pimiento","Brocheta de carne",lunch,general,medio,25
+Pincho de pollo,380,28,18,32,3,6,520,"pollo,papa,cebolla,pimiento","Brocheta de pollo",lunch,general,medio,20
+Salchi-arroz,420,14,16,56,2,4,820,"arroz,salchicha,salsa,cebolla","Arroz con salchicha y salsa",lunch,general,bajo,15
+Arroz con camarón,440,26,12,62,3,4,680,"arroz,camarón,cebolla,tomate","Arroz marinero con camarón",lunch,costa,medio,35
+Arroz con mariscos,520,28,18,65,4,5,780,"arroz,mariscos,cebolla,tomate","Arroz con mariscos mixtos",lunch,costa,alto,45
+Corvina frita,320,32,18,12,1,1,420,"corvina,harina,aceite,limón","Corvina empanizada y frita",lunch,costa,medio,35
+Pescado frito con arroz,480,34,18,52,2,2,520,"pescado,arroz,aceite,limón","Pescado frito con arroz",lunch,costa,medio,35
+Encocado de pescado,420,30,22,28,5,4,580,"pescado,coco,verde,yuca","Pescado en salsa de coco",lunch,costa,medio,40
+Viche de pescado,380,26,12,42,6,5,720,"pescado,maní,yuca,verde,choclo","Sopa de pescado con maní",lunch,costa,medio,40
+Ceviche mixto,300,24,12,26,3,5,820,"pescado,camarón,tomate,cebolla","Ceviche de pescado y camarón",lunch,costa,medio,35
+Salchipapa especial,680,22,38,68,6,8,1120,"papa,salchicha,huevo,queso,salsas","Salchipapa con extras",lunch,general,medio,20
+Hamburguesa casera,520,26,28,45,3,6,780,"pan,carne,queso,tomate,lechuga","Hamburguesa hecha en casa",lunch,general,medio,25
+Hot dog ecuatoriano,420,16,22,42,2,8,920,"pan,salchicha,col,papa,salsas","Hot dog con col y papas",snack,general,bajo,10
+Encebollado mixto,380,30,12,40,5,4,780,"pescado,atún,yuca,tomate,cebolla","Encebollado de pescado y atún",lunch,costa,medio,35
+Caldo de bolas de verde,450,18,16,58,6,4,620,"verde,carne,zanahoria,choclo","Sopa con bolas de verde",lunch,costa,medio,40
+Aguado de gallina,320,22,12,32,3,3,580,"gallina,arroz,papa,cilantro","Sopa aguada con gallina",lunch,general,medio,40
+Sopa de bola,380,16,14,48,5,4,580,"verde,carne,papa,yuca","Sopa con bola de verde",lunch,costa,medio,35
+Sopa de mondongo,340,20,14,36,4,3,680,"mondongo,papa,yuca,mote","Sopa de tripa de res",lunch,costa,medio,40
+Arroz marinero,480,26,16,60,3,4,720,"arroz,mariscos,camarón,calamar","Arroz con mariscos del mar",lunch,costa,alto,40
+Tallarín con mariscos,420,24,14,54,4,5,680,"tallarín,mariscos,tomate,cebolla","Tallarín con frutos del mar",lunch,costa,alto,35
+Chaulafán ecuatoriano,540,22,20,68,4,6,880,"arroz,cerdo,pollo,huevo,cebolla","Arroz frito estilo ecuatoriano",lunch,general,medio,30
+Arroz con cerdo,520,24,22,60,3,4,620,"arroz,cerdo,cebolla,ajo,sal","Arroz con carne de cerdo",lunch,general,medio,30
+Seco de gallina,500,32,18,52,5,4,680,"gallina,cerveza,arroz,cebolla","Gallina en salsa",lunch,general,medio,45
+Estofado de carne,460,28,20,42,5,6,620,"carne,papa,zanahoria,arveja","Estofado criollo de carne",lunch,general,medio,35
+Guiso de pollo,440,30,18,42,4,5,580,"pollo,papa,zanahoria,arveja","Guiso casero de pollo",lunch,general,medio,30
+Tallarín saltado,480,24,18,58,5,6,680,"tallarín,carne,cebolla,tomate,pimiento","Tallarín salteado con carne",lunch,general,medio,30
+Chop suey ecuatoriano,380,20,14,48,6,8,720,"pollo,col,zanahoria,cebolla,salsa","Chop suey criollo",lunch,general,medio,30
+Arroz con verduras,280,8,6,52,5,4,380,"arroz,zanahoria,arveja,choclo,cebolla","Arroz con vegetales mixtos",lunch,general,bajo,20
+Lentejas con arroz,340,16,4,62,12,3,420,"lenteja,arroz,cebolla,tomate","Lentejas con arroz blanco",lunch,general,bajo,25
+Frejol con arroz,350,17,3,64,14,2,400,"frejol,arroz,cebolla,tomate","Frejol rojo con arroz",lunch,general,bajo,25
+Sopa de arveja,240,14,3,42,10,8,480,"arveja,papa,zanahoria,cebolla","Sopa de arveja verde",lunch,sierra,bajo,25
+Sopa de habas,220,12,2,40,9,6,420,"haba,papa,queso,cebolla","Sopa cremosa de habas",lunch,sierra,bajo,25
+Colada de harina de plátano,200,3,2,44,3,18,60,"harina de verde,leche,panela","Colada de harina de plátano",breakfast,costa,bajo,10
+Café con leche y tostada,240,7,5,42,2,8,320,"café,leche,pan tostado,mantequilla","Desayuno simple",breakfast,general,bajo,5
+Yogur con granola,280,10,8,44,4,18,120,"yogur,granola,miel","Yogur con cereal",breakfast,general,medio,5
+Ensalada de frutas,140,2,0.5,34,4,28,5,"papaya,piña,melón,manzana","Ensalada de frutas frescas",snack,general,bajo,10
+Jugo verde,95,2,0.4,22,3,16,8,"espinaca,pepino,limón,manzana","Jugo verde saludable",snack,general,medio,10
+Sango de verde,280,4,8,52,5,12,180,"plátano verde,mantequilla,sal","Puré de plátano verde",breakfast,costa,bajo,20
+Sango de quinua,240,8,6,42,5,8,220,"quinua,leche,mantequilla,sal","Puré cremoso de quinua",breakfast,sierra,bajo,20
+Mazamorra de maíz,220,5,4,44,4,18,140,"maíz,leche,panela,canela","Mazamorra dulce de maíz",snack,general,bajo,20
+Arroz con coco,320,4,14,46,2,12,180,"arroz,coco,panela,pasas","Arroz dulce con coco",snack,costa,bajo,25
+Muchines de yuca,340,6,16,46,3,3,380,"yuca,queso,huevo,aceite","Bolas de yuca con queso fritas",snack,costa,bajo,25
+Tortillas de yuca,280,5,12,40,2,2,320,"yuca,queso,huevo","Tortillas de yuca con queso",snack,costa,bajo,20
+Buñuelos de viento,320,7,14,44,2,12,280,"harina,huevo,azúcar,aceite","Buñuelos fritos dulces",snack,general,bajo,20
+Pristiños,340,6,16,46,2,18,240,"harina,huevo,miel,aceite","Pristiños con miel",snack,sierra,bajo,25
+Rosquitas de manteca,380,8,18,48,2,14,320,"harina,manteca,azúcar,anís","Rosquitas dulces de manteca",snack,sierra,bajo,20
+Quesadillas de horno,320,10,14,42,2,8,380,"harina,queso,mantequilla","Quesadillas horneadas",snack,general,bajo,25
+Molletes de anís,280,6,8,48,2,12,280,"harina,anís,mantequilla,azúcar","Molletes dulces con anís",snack,sierra,bajo,20
+Pan de casa,260,7,4,50,3,6,420,"harina,levadura,sal,manteca","Pan casero básico",breakfast,general,bajo,15
+Bizcochuelo simple,240,6,8,38,1,20,180,"harina,huevo,azúcar,mantequilla","Bizcocho simple casero",snack,general,bajo,30
+Torta de vainilla,320,6,14,46,1,28,220,"harina,huevo,azúcar,vainilla,mantequilla","Torta de vainilla casera",snack,general,medio,45
+Suspiros,180,3,6,30,0,26,80,"clara de huevo,azúcar,vainilla","Merengues dulces",snack,general,bajo,20
+Galletas de avena,140,3,6,20,2,8,120,"avena,harina,azúcar,mantequilla","Galletas caseras de avena",snack,general,bajo,25
