@@ -1,6 +1,6 @@
-psutil 
-speedtest-cli
-numpy
-pandas
-scikit-learn
+ollama
 streamlit
+langcahin
+langcahin_community
+chromadb
+tensorflow
