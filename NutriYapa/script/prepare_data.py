@@ -7,6 +7,20 @@ RAW = PROJECT_ROOT / "data" / "raw"
 PROC = PROJECT_ROOT / "data" / "processed"
 PROC.mkdir(parents=True, exist_ok=True)
 
+def clean_easy_accessible_recipes():
+    """Cargar recetas fáciles y accesibles"""
+    try:
+        if (RAW / "recetas_faciles_accesibles.csv").exists():
+            df = pd.read_csv(RAW / "recetas_faciles_accesibles.csv")
+            print(f"✅ Recetas fáciles y accesibles cargadas: {len(df)} recetas")
+            return df
+        else:
+            print(f"⚠️ Archivo recetas_faciles_accesibles.csv no encontrado")
+            return pd.DataFrame()
+    except Exception as e:
+        print(f"❌ Error cargando recetas fáciles: {e}")
+        return pd.DataFrame()
+
 def clean_ecuadorian_recipes():
     """Procesar recetas ecuatorianas nativas"""
     try:
@@ -63,85 +77,47 @@ def clean_ecuadorian_products():
         return pd.DataFrame()
 
 def clean_recipes():
-    """Procesar recetas generales (si existen)"""
-    try:
-        df = pd.read_csv(RAW / "recipes.csv")
-        print(f"Recipes loaded: {len(df)} rows")
-        # Map actual column names to desired names
-        column_mapping = {
-            'Name': 'name',
-            'RecipeIngredientParts': 'ingredients',
-            'Calories': 'calories',
-            'ProteinContent': 'protein',
-            'FatContent': 'fat',
-            'CarbohydrateContent': 'carbs',
-            'Description': 'description',
-            'RecipeInstructions': 'instructions'
-        }
-        # Select and rename columns that exist
-        cols_to_keep = [col for col in column_mapping.keys() if col in df.columns]
-        df = df[cols_to_keep]
-        df = df.rename(columns=column_mapping)
-        # Drop rows with missing critical data
-        df = df.dropna(subset=['name', 'calories'], how='any')
-        df.to_csv(PROC / "recipes.csv", index=False)
-        print(f"Recipes processed: {len(df)} rows with columns {df.columns.tolist()}")
-        return df
-    except FileNotFoundError:
-        print(f"⚠️ Archivo recipes.csv no encontrado - usando solo recetas ecuatorianas")
-        return pd.DataFrame()
-    except Exception as e:
-        print(f"Error processing recipes: {e}")
-        return pd.DataFrame()
+    """Ya no procesamos recetas en inglés - solo usamos recetas ecuatorianas en español"""
+    print("⚠️ Recetas en inglés ignoradas - usando solo recetas ecuatorianas en español")
+    return pd.DataFrame()
 
 def clean_products():
-    """Procesar productos generales (si existen)"""
-    try:
-        # Read with error handling for malformed lines
-        df = pd.read_csv(RAW / "en.openfoodfacts.org.products.csv", 
-                        sep='\t', 
-                        low_memory=False, 
-                        on_bad_lines='skip',  # Skip malformed lines
-                        encoding='utf-8',
-                        nrows=100000)  # Limit to first 100k rows for performance
-        # Select columns that exist
-        cols_to_keep = []
-        for col in ['product_name', 'ingredients_text', 'nutriscore_grade', 
-                    'energy-kcal_100g', 'proteins_100g', 'carbohydrates_100g', 'fat_100g']:
-            if col in df.columns:
-                cols_to_keep.append(col)
-        if cols_to_keep:
-            df = df[cols_to_keep]
-        df.to_csv(PROC / "products.csv", index=False)
-        print(f"Products processed: {len(df)} rows")
-        return df
-    except FileNotFoundError:
-        print(f"⚠️ Archivo products.csv no encontrado - usando solo productos ecuatorianos")
-        return pd.DataFrame()
-    except Exception as e:
-        print(f"Error processing products: {e}")
-        print("Creating empty products.csv as fallback")
-        return pd.DataFrame()
+    """Ya no procesamos productos en inglés - solo usamos productos ecuatorianos en español"""
+    print("⚠️ Productos en inglés ignorados - usando solo productos ecuatorianos en español")
+    return pd.DataFrame()
 
 def combine_recipes():
-    """Combinar recetas ecuatorianas con recetas generales"""
+    """Combinar recetas ecuatorianas tradicionales con recetas fáciles y accesibles"""
     ecuadorian = pd.read_csv(PROC / "recetas_ecuatorianas.csv") if (PROC / "recetas_ecuatorianas.csv").exists() else pd.DataFrame()
-    general = pd.read_csv(PROC / "recipes.csv") if (PROC / "recipes.csv").exists() else pd.DataFrame()
     
-    if len(ecuadorian) > 0:
-        if len(general) > 0:
-            # Combinar ambos datasets
-            combined = pd.concat([ecuadorian, general], ignore_index=True)
-            print(f"📊 Recetas combinadas: {len(ecuadorian)} ecuatorianas + {len(general)} generales = {len(combined)} total")
-        else:
-            combined = ecuadorian
-            print(f"📊 Usando solo recetas ecuatorianas: {len(combined)} total")
+    # Cargar recetas fáciles y accesibles
+    easy_recipes = clean_easy_accessible_recipes()
+    
+    if len(ecuadorian) > 0 and len(easy_recipes) > 0:
+        # Combinar ambos datasets
+        combined = pd.concat([ecuadorian, easy_recipes], ignore_index=True)
+        
+        # Eliminar duplicados por nombre
+        combined = combined.drop_duplicates(subset=['name'], keep='first')
         
         combined.to_csv(PROC / "recipes.csv", index=False)
+        print(f"\n✅ Recetas combinadas: {len(ecuadorian)} tradicionales + {len(easy_recipes)} fáciles = {len(combined)} total (sin duplicados)")
+        
+        # Mostrar distribución por meal_type
+        if 'meal_type' in combined.columns:
+            print(f"\n   🍽️ Distribución por tipo de comida:")
+            for meal, count in combined['meal_type'].value_counts().items():
+                print(f"      {meal}: {count} recetas")
+        
         return combined
-    elif len(general) > 0:
-        print(f"📊 Usando solo recetas generales: {len(general)} total")
-        return general
+    elif len(ecuadorian) > 0:
+        ecuadorian.to_csv(PROC / "recipes.csv", index=False)
+        print(f"✅ Usando SOLO recetas ecuatorianas tradicionales: {len(ecuadorian)} recetas")
+        return ecuadorian
+    elif len(easy_recipes) > 0:
+        easy_recipes.to_csv(PROC / "recipes.csv", index=False)
+        print(f"✅ Usando SOLO recetas fáciles: {len(easy_recipes)} recetas")
+        return easy_recipes
     else:
         print("❌ No hay recetas disponibles")
         return pd.DataFrame()
