@@ -1,0 +1,6 @@
+ollama
+streamlit
+langcahin
+langcahin_community
+chromadb
+tensorflow

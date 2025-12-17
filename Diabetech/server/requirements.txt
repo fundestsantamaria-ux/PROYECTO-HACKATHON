@@ -1,0 +1,6 @@
+psutil 
+speedtest-cli
+numpy
+pandas
+scikit-learn
+streamlit

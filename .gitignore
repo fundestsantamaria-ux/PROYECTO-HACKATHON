@@ -1,3 +1,11 @@
 Diabetech/.venv
 Diabetech/__pycache__/
 *.pyc
+Diabetech/server/nodo*
+Diabetech/server/full_metrics*
+Diabetech/server/*times*.txt
+Diabetech/server/accs*.txt
+Diabetech/server/f1scores*.txt
+Diabetech/server/*/models*
+Diabetech/server/models_path*
+Diabetch/server/__pycache__
